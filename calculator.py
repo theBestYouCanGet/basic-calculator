@@ -1,7 +1,7 @@
 def add(x,y):
     return x + y
 
-def substract(x,y):
+def subtract(x,y):
     return x - y
 
 def multiply(x,y):
@@ -18,12 +18,12 @@ def main():
     while True:
         print("Select your operation: ")
         print("1. Addition")
-        print("2. Substraction")
+        print("2. Subtraction")
         print("3. Multiplication")
         print("4. Division")
         print("5. Exit")
 
-        operation = input("Chose your Operation(1, 2, 3, 4): ")
+        operation = input("Choose your Operation(1, 2, 3, 4): ")
 
         if operation in ['1', '2', '3', '4']:
             try:
@@ -36,10 +36,10 @@ def main():
                     print("result: ", substract(x, y))
                 elif operation == '3':
                     print("result: ", multiply(x, y))
-                elif operatio == '4':
+                elif operation == '4':
                     print("result: ", divide(x, y))
         
-            except ValueErroe:
+            except ValueError:
                 print("Invalid input! Please enter numbers only.")
         
         elif operation == '5':
